@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title-line {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0; 
+    color:#218838;
+    font-size: 20px;
+}
+
+.title-line::before,
+.title-line::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.title-line::before {
+    margin-right: 10px; 
+    color:#218838;
+}
+
+.title-line::after {
+    margin-left: 10px; 
+    color:#218838;
+}
+
+
+.bundle {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.bundle label {
+    display: flex;
+    align-items: center; 
+    cursor: pointer;
+}
+
+.bundle input[type="radio"] {
+    margin-right: 15px; 
+    transform: translateY(2px); 
+}
+
+.bundle-details {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.bundle-details p {
+    margin-bottom: 0;
+}
+
+.bundle-header {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.pair, .disc-popular {
+    margin: 0; 
+}
+
+.disc-popular{
+    color: #008000;
+}
+
+.bundle-footer {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.price-two, .disc-off {
+    margin: 0; 
+}
+
+.disc-off{
+    color: #008000;
+}
+
+.price {
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+.discount {
+    color: #008000;
+    text-align: right;
+    margin-left: 185px;
+}
+
+.popular {
+    border-color: #28a745;
+}
+
+.most-popular {
+    font-size: 12px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px; 
+}
+
+.option label {
+    margin-right: -16px;
+    min-width: 40px;
+    text-align: end;
+    margin-left: 29px; 
+}
+
+.option select {
+    margin-right: 10px; 
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #008000; 
+}
+
+.total {
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+.add-to-cart {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+.powered-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #999;
+    margin-top: 15px;
+}
+
+.bundle.selected {
+    background-color: #eaffea; 
+    border-color: #23963e; 
+}
+
+.pumper{
+    color: #218838;
+    padding-left: 5px;
+}
+
+/* Hide all options dropdowns initially */
+#options1, #options2, #options3 {
+    display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .title-line {
+        font-size: 18px;
+    }
+
+    .bundle {
+        padding: 10px;
+        margin-bottom: 8px;
+    }
+
+    .bundle-details {
+        flex-direction: column;
+    }
+
+    .option label {
+        margin-left: 20px;
+    }
+
+    .discount {
+        margin-left: 0; 
+        text-align: left; 
+    }
+
+    .add-to-cart {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .powered-by {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .title-line {
+        font-size: 16px;
+    }
+
+    .bundle {
+        padding: 8px;
+        margin-bottom: 6px;
+    }
+
+    .bundle-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bundle-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .option {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 5px;
+    }
+
+    .option label {
+        margin-left: 0; 
+    }
+
+    .add-to-cart {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .powered-by {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    #options1, #options2, #options3 {
+        display: block; 
+    }
+}

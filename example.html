@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Bundle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-line">
+            <span><b>Bundle & Save</b></span>
+        </div>
+
+         <!-- Radio Button 1 -->
+        <div class="bundle">
+            <label>
+                <input type="radio" name="bundle" value="1" onclick="toggleOptions()">
+                <div class="bundle-details">
+                    <p>1 Pair <span class="discount"><b>50% OFF</b></p>
+                    <p class="price">DKK 195.00</p>
+                </div>
+            </label>
+            <div class="options" id="options1"><br>
+                <div class="option">
+                    <label>#1</label>
+                    <select>
+                        <option>Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Colour</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Black</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label>#2</label>
+                    <select>
+                        <option>Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Colour</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Black</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Radio Button 2 -->
+        <div class="bundle">
+            <label>
+                <input type="radio" name="bundle" value="2" onclick="toggleOptions()">
+                <div class="bundle-details">
+                    <div class="bundle-details">
+                        <div class="bundle-header">
+                            <p class="pair">2 Pair</p>
+                            <p class="disc-popular"><b>Most Popular</b></p>
+                        </div>
+                        <div class="bundle-footer">
+                            <p class="price-two"><b>DKK 345.00</b></p>
+                            <p class="disc-off"><b>40% OFF</b></p>
+                        </div>
+                    </div>
+                </div>
+            </label>
+            <div class="options" id="options2"><br>
+                <div class="option">
+                    <label>#1</label>
+                    <select>
+                        <option>Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Colour</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Black</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label>#2</label>
+                    <select>
+                        <option>Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Colour</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Black</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Radio Button 3 -->
+        <div class="bundle">
+            <label>
+                <input type="radio" name="bundle" value="3" onclick="toggleOptions()">
+                <div class="bundle-details">
+                    <p>3 Pair <span class="discount"><b>60% OFF</b></p>
+                    <p class="price">DKK 528.00</p>
+                </div>
+            </label>
+            <div class="options" id="options3"><br>
+                <div class="option">
+                    <label>#1</label>
+                    <select>
+                        <option>Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Colour</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Black</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label>#2</label>
+                    <select>
+                        <option>Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Colour</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Black</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <p class="shipping-info">Free 2 Day Shipping</p>
+            <p class="total">Total: DKK 360.00</p>
+        </div>
+ 
+        <!-- Add to Cart Button -->
+        <button class="add-to-cart">+ Add to Cart</button>
+
+        <p class="powered-by"> © Powered by <span class="pumper"><b> Pumper</b></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
